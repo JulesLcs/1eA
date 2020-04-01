@@ -15,3 +15,7 @@ function occuTest(){
     console.log(nbOccurences(text, "quux")); // => 0
     console.log(nbOccurences(text, "baz")); // => 1
 }
+function flattenTest(){
+    console.log( flatten2D([[1,2], [3,4], [5,6]])); // [1, 2, 3, 4, 5, 6]
+    console.log( flatten2D([[1,2], [3,4,5], [6]])); // [1, 2, 3, 4, 5, 6]
+}

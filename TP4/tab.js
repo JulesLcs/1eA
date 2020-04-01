@@ -35,3 +35,12 @@ function nbOccurences(wordList, word){
     }
     return occ;
 }
+function flatten2D(array){
+    let t = [];
+    for (let i = 0; i < array.length; ++i) {
+        for (let j = 0; j < array[i].length; ++j){
+            t.push(array[i][j]);
+        }
+    }
+    return t;
+}

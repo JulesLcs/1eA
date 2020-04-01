@@ -3,5 +3,6 @@ function main(){
     longestWordTest();
     rangeTest();
     occuTest();
+    flattenTest();
 }
 main();
