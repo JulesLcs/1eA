@@ -8,6 +8,7 @@ function sum(numbers){
    }
     return s;
 }
+
 function longestWord(words){
     let lw ="";
     for(let i = 0; i < words.length; i++){
@@ -37,10 +38,71 @@ function nbOccurences(wordList, word){
 }
 function flatten2D(array){
     let t = [];
-    for (let i = 0; i < array.length; ++i) {
-        for (let j = 0; j < array[i].length; ++j){
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++){
             t.push(array[i][j]);
         }
     }
     return t;
 }
+function name(nameList,addName){
+    for(let i = 0; i < nameList.length; i++){
+        console.log(nameList[i]);
+    }
+    nameList.pop();
+    nameList.push(addName);
+    return nameList;
+}
+function mult(){
+    for(let i = 1 ; i < 11;i++){
+        for(let  j = 1; j < 11; j++){
+        console.log(i*j);
+       }
+       console.log("////////\r");
+    }
+}
+
+
+function chiffrementCesar(message, key){
+    let newMessage = "";
+    let ascii = 0;
+    for(let i = 0; i < message.length;i++){
+        if(message[i]!= " "){
+        ascii = message.charCodeAt(i);
+        if(ascii > 64 && ascii < 91 ||  ascii > 96 && ascii < 123){
+            ascii = ascii + key;
+        }
+        if(message[i] == message[i].toLowerCase()){
+            if(ascii > 122){
+                ascii = ascii - 26;
+            }
+            if(ascii < 97){
+                ascii = ascii + 26;
+            }
+        }
+        else{
+            if(ascii > 90){
+                ascii = ascii - 26;
+            }
+            if(ascii < 65){
+                ascii = ascii + 26;
+            }
+        }
+        newMessage =  newMessage + String.fromCharCode(ascii);
+    }
+        else{
+            newMessage = newMessage + " ";
+        }
+    }   
+    return newMessage;
+ }
+function dechiffrement3(message, key){
+    let dekey = -key;
+    let newMessage = chiffrementCesar(message, dekey);
+    return newMessage;
+}
+/*function chiffrementViginere(message, key){
+    let newMessage ="";
+    let ascii = 0;
+  
+}*/ //je n'arrive pas à le coder.

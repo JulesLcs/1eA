@@ -19,3 +19,17 @@ function flattenTest(){
     console.log( flatten2D([[1,2], [3,4], [5,6]])); // [1, 2, 3, 4, 5, 6]
     console.log( flatten2D([[1,2], [3,4,5], [6]])); // [1, 2, 3, 4, 5, 6]
 }
+function nameTest(){
+    console.log( name(["Bob","Julien","Roger"],"Luffy"));
+}
+function multTest(){
+    console.log(mult());
+}
+function cesarTest(){
+    console.log(chiffrementCesar("Attaquez Asterix", 3));
+    console.log(dechiffrement3("Dwwdtxhc Dvwhula", 3));
+}
+/*function viginereTest(){
+    console.log(chiffrementViginere("Attaquez Asterix",314));
+
+}*/

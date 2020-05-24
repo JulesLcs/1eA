@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "android",
+			"path": "ReactNative/App/",
+			"problemMatcher": [],
+			"label": "npm: android - ReactNative/App",
+			"detail": "expo start --android"
+		}
+	]
+}
