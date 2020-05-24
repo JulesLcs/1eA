@@ -19,6 +19,8 @@ function test2D() {
     ])); // => [0, 2, 4] 
 }
 function testRemoveDuplicates(values) {
-    console.log(removeDuplicates([0, 1, 2, 2, 3, 4])); // => [0, 2, 4] 
+    console.log( removeDuplicates([]) );                  // => []
+console.log( removeDuplicates([1,2,3,4]) );           // => [1,2,3,4]
+console.log( removeDuplicates([1,2,3,2,4,3,1,1]) );   // => [1,2,3,4]
 }
 
