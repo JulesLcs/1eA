@@ -1,7 +1,7 @@
 function main(){
 
     
-    let synopsisImitationGame = document.getElementsByClassName('synopsis')[1].innerHTML;
+   
     console.log('===============================================');
 
     console.log('Titre de la page : ' + document.title);
