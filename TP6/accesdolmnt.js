@@ -14,11 +14,11 @@ function main(){
 
     console.log('===============================================');
 
-    console.log('Notre page contient ' + document.querySelectorAll('p').length + ' paragraphes et ' + document.querySelectorAll('img').length; + ' images.');
+    console.log('Notre page contient ' + document.querySelectorAll('p').length + ' paragraphes et ' + document.querySelectorAll('img').length + ' images.');
 
     console.log('========================================');
 
-    console.log('Notre page contient ' + document.getElementsByClassName('s').length; + ' synopsis');
+    console.log('Notre page contient ' + document.getElementsByClassName('s').length + ' synopsis');
 
     console.log('========================================');
 
