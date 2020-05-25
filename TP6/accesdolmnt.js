@@ -1,11 +1,5 @@
 function main(){
 
-    
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> a905b48e5ad2a212451952562bcc79ef74177ea1
     console.log('===============================================');
 
     console.log('Titre de la page : ' + document.title);
