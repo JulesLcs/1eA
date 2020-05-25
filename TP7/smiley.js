@@ -45,14 +45,14 @@ function DisplayDateTime(){
     heure.innerText = event.toLocaleTimeString('fr-FR');
 }
 function displayDecrementSeconds(decrement){
-    let time = document.getElementById("dessin");
-    if(decrement == 0){
-        time.innerHTML= "Le dessin est affiché ci-dessous";
+    let dessin = document.getElementById("dessin");
+    if(decrement != 0){
+        dessin.innerText = "Le dessin va s'afficher après "+ decrement ;
+        setTimeout(displayDecrementSeconds,1000, decrement-1); 
+    }else{
+        dessin.innerText= "Le dessin est affiché ci-dessous";
         let context = get2DContext("smiley");
         canvasApp(context);
-    }else{
-        time.innerHTML = "Le dessin va s'afficher après "+ decrement;
-        setTimeout(displayDecrementSeconds, 1000, decrement-1);
     }
 }
 function main(){
