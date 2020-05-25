@@ -1,14 +1,46 @@
+function main(){ 
+    let t = document.querySelector("#EndTab")
+    let titre = document.title;
+    let lignes = document.querySelectorAll("tr").length;
+    let colonnes = document.querySelectorAll("th").length
+    let semestres = (document.querySelectorAll("tr").length-1)/2;
+    let S5E1 = document.querySelector("#note1").innerText;
+    let S5E2 = document.querySelector("#note2").innerText;
 
-console.log("le titre de la page est : " +document.title );
+    let title = document.createElement("p");
+    let lines = document.createElement("p");
+    let columns = document.createElement("p");
+    let semesters = document.createElement("p");
+    let note1 = document.createElement("tp");
+    let note2 = document.createElement("p");
+    let text = document.createElement("textarea");
 
-console.log("Le nombre de lignes est : " + document.querySelectorAll("tr").length);
+    document.querySelector("#note1").innerText = parseInt(S5E1)+2;
+    document.querySelector("#note1").style.fontSize = "50px";
+    document.querySelector("#note1").style.color = "red";
 
-console.log("Le nombre de colonnes est : " + document.querySelectorAll("th").length);
 
-console.log("Le nombre de semestres est : " + (document.querySelectorAll("tr").length-1)/2);
+    t.innerText = "Titre : " + titre;
+    lines.innerText = "Lignes : " + lignes;
+    columns.innerText = "Colonnes : " + colonnes;
+    semesters.innerText  ="Semestres : " + semestres;
+    note1.innerText = "\nNote de S5 E1 : " + S5E1;
+    note2.innerText = "Note de S5 E2 : " + S5E2 +  "\n";
 
-console.log("Le note de S5 de E1 est : " + document.querySelector("#note1").innerHTML);
 
-console.log("Le note de S5 de E2 est : " + document.querySelector("#note2").innerHTML);
 
-console.log("le note de S5 de E1 modifié est :" + document.querySelector("#note1").innerHTML.modif);
+
+
+    t.appendChild(lines);
+    lines.appendChild(columns); 
+    columns.appendChild(semesters);
+    semesters.appendChild(note1);
+    note1.appendChild(note2);
+    note2.appendChild(text);
+
+    }
+    
+    main();
+
+
+
