@@ -26,6 +26,7 @@ function main(){
     semesters.innerText  ="Semestres : " + semestres;
     note1.innerText = "\nNote de S5 E1 : " + S5E1;
     note2.innerText = "Note de S5 E2 : " + S5E2 +  "\n";
+<<<<<<< HEAD
 
 
 
@@ -44,3 +45,20 @@ function main(){
 
 
 
+=======
+
+
+
+
+
+    t.appendChild(lines);
+    lines.appendChild(columns); 
+    columns.appendChild(semesters);
+    semesters.appendChild(note1);
+    note1.appendChild(note2);
+    note2.appendChild(text);
+
+    }
+    
+    main();
+>>>>>>> a905b48e5ad2a212451952562bcc79ef74177ea1
